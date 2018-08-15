@@ -13,11 +13,12 @@ let snake;
 
   it('should move in given direction', () => {
 
-    assert.equal(head.x, 0);
-    assert.equal(head.y, 0);
-    head.move();
-    assert.equal(head.x, 1);
+    assert.equal(snake.x, 0);
+    assert.equal(snake.y, 0);
+    snake.move();
+    assert.equal(snake.x, 1);
 
   })
-})
 
+  it('should grow in length')
+})
