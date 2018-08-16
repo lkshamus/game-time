@@ -3,7 +3,7 @@ const Snake = require('../lib/Snake');
 
 
 
-describe('Snake', () =>{
+describe('Snake', () => {
   let snake;
   beforeEach(() => {
     snake = new Snake(0, 0, 20, 20, 'green');
