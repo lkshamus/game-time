@@ -1,9 +1,7 @@
 const { assert } = require('chai');
-const Head = require('../lib/Snake');
+const Snake = require('../lib/Snake');
 
-
-
-describe('Snake', () =>{
+describe('Snake', () => {
 
 let snake;
 
@@ -20,5 +18,10 @@ let snake;
 
   })
 
-  it('should grow in length')
+  it('should grow in length', () => {
+    assert.equal(snake.body.length, 0);
+    snake.grow(3);
+    assert.equal(snake.body.length, 3);
+  })
+  
 })
