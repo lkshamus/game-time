@@ -9,24 +9,22 @@ const ctx = {
 }
 
 describe('Game', () => {
-
-  it('should end the game if block collides with wall', () => {
-    //setup
-    const game = new Game(ctx)
-    const block = game.blocks[0];
-
-    block.x = ctx.canvas.width;
-    //execution
-    game.handleBlock(block);
-
-    //assertion
-
+  let game;
+  beforeEach(() => {
+    game = new Game(ctx);
+  });
+  it('should take properties', () => {
+    let newGame = new Game(ctx);
+    assert.notEqual(game, newGame);
+  });
+  it('should end game', () => {
+    game.endGame();
     assert.isTrue(game.gameOver);
-  })
+  });
+  it('should end the game if block collides with wall', () => {
+    game.snake.x = ctx.canvas.width;
+    game.handleSnake();
+    assert.isTrue(game.gameOver);
+  });
 
-//   it('should take properties', () => {})
-//   it('should end game', () => {})
-//   it('should collide with walls', () => {})
-//   it('should be able to move', () => {})
-//   it('should be able to changeDirection', () => {})
 })
