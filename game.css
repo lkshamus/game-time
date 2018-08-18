@@ -8,9 +8,10 @@ body{
 }
 
 div {
+  margin: 140px 50px;
   display: grid;
   position: absolute;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   width: 500px;
   height: 520px; 
 }
@@ -38,16 +39,42 @@ h1 {
   font-family: 'Rajdhani', sans-serif;
 }
 
-.new-game {
-  display: flex;
-  margin: 35px 200px;
-  grid-row: 4 / span 1;
-  height: 50px;
-  width: 130px;
-  padding: .5em;
-  font-size: 1em;
+button {
   background-color:#3D4B54;
   border-style: none;
+  margin: auto;
+  width: 130px;
+  color: #bdc4c9;
+}
+
+.difficulty-level,
+.new-game {
+  display: flex;
+  height: 50px;
+  padding: .5em;
+  font-size: 1em;
+}
+
+.difficulty-level {
+ margin: 20px 60px;
+}
+
+.new-game {
+  display: inline-block;
+  grid-row: 5 / span 1;
+}
+
+.difficulty-level {
+  grid-row: 4 / span 1;
+  width: 100px;
+}
+
+.difficulty-level-easy, 
+.difficulty-level-medium,
+.difficulty-level-hard {
+  display: flex;
+  margin: 0 20px;
+  padding: 20px;
 }
 
 button:focus { 
@@ -66,6 +93,6 @@ body {
 #game {
   background-color: #39464E;
   border: 1px solid #429488;
-  margin: 20px 605px;
+  margin: 100px 605px;
   display: absolute;
 }
