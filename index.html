@@ -4,11 +4,18 @@
   <meta charset="utf-8">
   <title>Game Time</title>
   <link href='./game.css' rel='stylesheet' type='text/css'/>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Rajdhani" rel="stylesheet">
 </head>
 <body>
+  <div>
+    <h1> SNAKE </h1>
+    <h2 class="titled-score"> Score: <span class="score"> </span> </h2>
+    <h3 class="instructions"> Instructions: 
+    Use the arrow keys to move and eat a cube. The snake will grow larger as it eats more cubes. Running into the walls or running into self will end the game.
+    </h3>
+    <button class="new-game"> New Game </button>
+  </div>
   <canvas id="game" width="600" height="600"></canvas>
-  <h1> Score: <span class="score"> </span> </h1>
-  <button class="new-game"> New Game </button>
   <script src="main.bundle.js"></script>
 </body>
 </html>
