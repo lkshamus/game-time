@@ -3,6 +3,10 @@
   font-family: 'Orbitron', sans-serif;
 }
 
+body{
+  position: fixed;
+}
+
 div {
   display: grid;
   position: absolute;
