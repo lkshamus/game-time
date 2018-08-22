@@ -13,7 +13,7 @@ describe('Snake', () => {
     assert.equal(snake.x, 0);
     assert.equal(snake.y, 0);
     snake.move();
-    assert.equal(snake.x, 1);
+    assert.equal(snake.x, 20);
   });
 
   it('should grow in length', () =>{

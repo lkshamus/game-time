@@ -15,8 +15,6 @@ describe('GamePiece', () => {
       color: 'green',
       dx: 10,
       dy: 0,
-      dxv: .1,
-      dyv: .1,
       lx: 0,
       ly: 0
     })
