@@ -12,7 +12,7 @@ This is our version of the classic Snake game, made using HTML5 Canvas
 
 # Contributors 
 
-### Laura Shamus and Drake Bott
+### [Laura Shamus](https://github.com/lkshamus) and [Drake Bott](https://github.com/bottd)
 
 ### Technologies and Resources Used
 * HTML 5 Canvas
